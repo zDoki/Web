@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="pies.css" />
+  </head>
+  <body>
+    <!--Logo y menus-->
+    <nav class="topheader">
+      <a href="" class="">
+        <img height="50px" width="50px" src="img/beef.jpg" title="MU" />
+      </a>
+
+      <ul class="Menu-Horizontal">
+        <li><a href="">Personas</a></li>
+        <li><a href="">Empresa</a></li>
+        <li>
+          <a href="">Productos</a>
+          <ul class="Menu-Vertical">
+            <!--CaMVIAR OPCIONES DE MENU VERTICAL-->>
+            <li><a href="">Tarjetas</a></li>
+            <li><a href="">Cuentas</a></li>
+            <li><a href="">Prestamos</a></li>
+            <li><a href="">Seguros</a></li>
+          </ul>
+        </li>
+
+        <li><a href="">Abre tu cuenta</a></li>
+        <li><a href="">Contactanos</a></li>
+      </ul>
+    </nav>
+
+    <!--SECCION PERSONAS-->
+    <section class="seccion-personas">
+      <div class="division-general-personas">
+        <div class="div-pers-texto">
+          <h2>Seccion Persona</h2>
+          <p>
+            En Carnicería [Nombre], nos apasiona ofrecerte carne de la más alta
+            calidad, fresca y cuidadosamente seleccionada para tu mesa.
+            Trabajamos cada día con el compromiso de brindarte productos
+            confiables, cortes precisos y un servicio cercano que garantiza la
+            mejor experiencia para ti y tu familia. Desde los clásicos cortes de
+            res, cerdo y pollo hasta opciones especiales para tus asados o
+            recetas gourmet, en nuestra carnicería encontrarás todo lo que
+            necesitas para disfrutar del auténtico sabor de la carne fresca. Ven
+            a conocernos y descubre por qué nuestros clientes nos eligen por
+            nuestra calidad, confianza y atención personalizada. Tu confianza,
+            nuestro mejor corte.
+          </p>
+        </div>
+
+        <div class="div-pers-img">
+          <img src="img/vaca.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion-empresa">
+      <div class="division-general-empresa">
+        <div class="div-empresa-texto">
+          <h2>Mision</h2>
+          <p>
+            Brindar a nuestros clientes carne fresca, de la más alta calidad y
+            con los mejores estándares de higiene y servicio, ofreciendo una
+            atención personalizada y productos que garanticen sabor, confianza y
+            satisfacción en cada compra.
+          </p>
+
+          <h2>Vision</h2>
+          <p>
+            Ser la carnicería líder y referente en calidad, confianza y atención
+            en nuestra comunidad, reconocida por ofrecer productos frescos y
+            saludables, apoyando a productores locales y promoviendo el consumo
+            responsable y sostenible de carne
+          </p>
+        </div>
+
+        <div class="div-empresa-video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/XqA6SJpqiOk?si=Jma-coEauanJugzJ"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+<!--Formulario-->
+
+<section class="seccion-formulario">
+  <div class="div-cont-formulario">
+    <h2>Formulario de Registro</h2>
+      <p>Complete todos los campos</p>
+      <form class="Formulario-contactanos">
+      <!--imput label-->
+        
+      
+
+
+
+       <div class="campo">
+        <label for="nombre">Nombres Completos</label>
+        <input type="text" id="nombre" name="nombre" placeholder="ingrese su nombre">
+
+
+        
+       </div>
+
+       <!--imput select-->
+       
+        <div class="campo">
+          <label for="Pais">Pais</label>
+          <select id="pais" name="pais">
+            <option value="">seleccione un pais</option>
+            <option value="peru">Peru</option>
+            <option value="colombia">Colombia</option>
+            <option value="bolivia">Bolivia</option>
+            <option value="argentina">Argentina</option>
+          </select>
+        </div>
+      
+ <!--imput checkbox-->
+ 
+  <div class="campo">
+    <label>Motivo</label>
+      <ul class="lista-checkbox">
+        <li><label><input type="checkbox" name="intereses" value="queja">Queja</label>
+        <li><label><input type="checkbox" name="intereses" value="consulta">Consulta</label>
+        <li><label><input type="checkbox" name="intereses" value="problemas">Problemas con la web</label>
+      </ul>
+  </div>
+
+
+        <!--imput radio-->
+       <div class="campo">
+        <label>Sexo</label>
+        <ul class="lista-radio">
+          <li><label><input type="radio" name="sexo" value="maculino">Masculino</label>
+          <li><label><input type="radio" name="sexo" value="femenino">Femenino</label>
+          
+        </ul>
+        
+       </div>
+       
+       <button type="submit">Enviar</button>
+
+     </form>
+</section>
+
+
+  <!-- PIE DE PAGINA -->
+
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo y nombre de sitio -->
+          <div class="footer-brand">
+            <img
+              src="/img/beef.jpg"
+              alt="Logo"
+              class="footer-logo"
+            />
+            <p>SENATI</p>
+            <small>© 2025 Todos los derechos reservados</small>
+          </div>
+
+          <!-- Enlaces legales -->
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="/obtenerDocumento.pdf"
+              >Política de Privacidad</a
+            >
+            <!-- Dentro de href llama a un documento pdf con la poltica-->
+            <a href="#">Términos y Condiciones</a>
+            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+            <a href="/Documentos/LeyProteccionDatos.pdf">Protección de Datos</a>
+          </div>
+
+          <!-- Redes sociales con íconos personalizados -->
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                alt="Facebook"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                alt="LinkedIn"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+                alt="Twitter"
+                class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+
+
+
+  </body>
+</html>
